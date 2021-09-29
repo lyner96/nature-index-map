@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>Nature Index 2021 on the map</title>
+
+  <link rel="stylesheet" href="static/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700">
+  <link rel="stylesheet" href="static/css/leaflet.css"/>
+  <link rel="stylesheet" href="static/css/screen.css"/>
+  <link rel="stylesheet" href="static/css/MarkerCluster.css"/>
+  <link rel="stylesheet" href="static/css/MarkerCluster.Default.css"/>
+  <link rel="stylesheet" href="static/css/L.Control.Locate.min.css"/>
+  <link rel="stylesheet" href="static/css/L.Control.Sidebar.css"/>
+  <link rel="stylesheet" href="static/css/styles.css"/>
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/menu.css"/>
+  <link rel="stylesheet" href="static/css/icon.css"/>
+  <link rel="stylesheet" href="static/css/segment.css"/>
+  <link rel="stylesheet" href="static/css/button.css"/>
+  <link rel="stylesheet" href="static/css/form.min.css"/>
+  <link rel="stylesheet" href="static/css/grid.min.css"/>
+  <link rel="stylesheet" href="static/css/slider.css"/>
+
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/leaflet.js"></script>
+  <script src="static/js/leaflet.markercluster.js"></script>
+  <script src="static/js/leaflet.smoothmarkerbouncing.js"></script>
+  <script src="static/js/L.Control.Locate.min.js"></script>
+  <script src="static/js/form.min.js"></script>
+  <script src="static/js/chart.min.js"></script>
+  <script src="static/js/date.js"></script>
+  <script defer src="static/js/app.js"></script>
+</head>
+
+<body>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="margin-left: 0px;">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Nature Index 2021</h1>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h4><a id="country1_name">...</a> - <a id="country1_count">...</a></h4>
+
+                <p>Country 1</p>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h4><a id="country2_name">...</a> - <a id="country2_count">...</a></h4>
+
+                <p>Country 2</p>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-4 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h4><a id="country3_name">...</a> - <a id="country3_count">...</a></h4>
+
+                <p>Country 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Map -->
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-12">
+            <!-- MAP & BOX PANE -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Map</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <div class="d-md-flex">
+                  <div class="p-1 flex-fill" style="overflow: hidden">
+                    <!-- Map will be created here -->
+                    <div id="world-map-markers" style="height: 30em; overflow: hidden">
+                      <div id="map"></div>
+                    </div>
+                  </div>
+                </div><!-- /.d-md-flex -->
+              </div>
+              <!-- /.card-body -->
+            </div>
+        </div>
+        </div>
+        <!-- /.Map -->
+
+        <!-- Slider -->
+        <div class="row">
+          <!-- Left col -->
+          <div class="col-md-12">
+            <!-- MAP & BOX PANE -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Slider</h3>
+
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body p-0">
+                <div class="d-md-flex">
+                  <div class="p-1 flex-fill" style="overflow: hidden">
+                    <div class="slidecontainer">
+                      Nature Index Instituiton on map
+                      <input type="range" min="0" max="5" value="0" class="slider" id="myRange">
+                      <p>Index range: <span id="index"></span></p>
+                    </div>
+                  </div>
+                </div><!-- /.d-md-flex -->
+              </div>
+              <!-- /.card-body -->
+            </div>
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /. Slider -->
+    </section>
+</div>
+<!-- ./wrapper -->
+
+
+</body>
+</html>
